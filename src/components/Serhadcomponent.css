@@ -2,3 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
+.corners{
+border-radius: 25px;
+}
