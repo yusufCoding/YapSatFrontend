@@ -6,11 +6,10 @@ import Navbar from 'react-bootstrap/Navbar';
 import Card from 'react-bootstrap/Card';
 import CardGroup from 'react-bootstrap/CardGroup';
 import kralsero from "./Kralsero.jpg"
-import SerhadLogin from './components/SerhadLogin';
 import { useNavigate } from "react-router-dom";
 
 const Serhadcomponent = () => {
-  const navigate = useNavigate():
+  const navigate = useNavigate();
   const navigatePage = () => {
     navigate("/login");
   }
