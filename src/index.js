@@ -8,11 +8,12 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 import $ from 'jquery';
 import Popper from 'popper.js';
 import Serhadcomponent from './components/Serhadcomponent';
+import SerhadLogin from './components/SerhadLogin';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Serhadcomponent/>
+    <App/>
   </React.StrictMode>
 );
 

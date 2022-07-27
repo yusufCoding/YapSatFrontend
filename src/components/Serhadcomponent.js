@@ -1,16 +1,22 @@
 import React from 'react'
-import Button from 'react-bootstrap/Button';
+
 import Container from 'react-bootstrap/Container';
-import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Card from 'react-bootstrap/Card';
 import CardGroup from 'react-bootstrap/CardGroup';
 import kralsero from "./Kralsero.jpg"
+import SerhadLogin from './components/SerhadLogin';
+import { useNavigate } from "react-router-dom";
 
 const Serhadcomponent = () => {
+  const navigate = useNavigate():
+  const navigatePage = () => {
+    navigate("/login");
+  }
   return (
     <div>
+      
     <Navbar style={{padding:'20px'}} bg="dark" variant="dark" expand="lg">
       <Container fluid>
         <Navbar.Brand href="#">Yapsat</Navbar.Brand>
@@ -23,8 +29,9 @@ const Serhadcomponent = () => {
             <Nav.Link href="#action1">Home</Nav.Link>
           </Nav>
           <Nav>
-          <Nav.Link href="#action2">Üye ol</Nav.Link>
-          <Nav.Link href="#action2">Giriş</Nav.Link>
+          <Nav.Link href="#action1">Üye ol</Nav.Link>
+          <Nav.Link onClick={navigatePage}>Giriş</Nav.Link>
+
           </Nav>
         </Navbar.Collapse>
       </Container>
