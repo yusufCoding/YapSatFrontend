@@ -19,29 +19,10 @@ const Serhadcomponent = () => {
   }
   
   return (
-    <div>
-      
-    <Navbar style={{padding:'20px'}} bg="dark" variant="dark" expand="lg">
-      <Container fluid>
-        <Navbar.Brand href="#">Yapsat</Navbar.Brand>
-        <Navbar.Toggle aria-controls="navbarScroll" />
-        <Navbar.Collapse id="navbarScroll">
-          <Nav
-            className="me-auto my-2 my-lg-0"
-            style={{ maxHeight: '100px' }}
-            navbarScroll>         
-            <Nav.Link href="#action1">Home</Nav.Link>
-          </Nav>
-          <Nav>
-          <Nav.Link onClick={navigateReg}>Üye ol</Nav.Link>
-          <Nav.Link onClick={navigateLog}>Giriş</Nav.Link>
 
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
-
-    <div style={{ backgroundImage:`url(${backgroundCity})` }}>
+    <div className='w-full h-full bg-zinc-900/90'>
+    <img className='absolute w-full h-full  mix-blend-overlay' src={backgroundCity} alt="/" />
+    <br></br>
     <CardGroup className='text-center' style={{margin:'20px'}}>
       <Card style={{padding:'20px'}}>
         <Card.Img variant="top" src={kralsero}/>
@@ -84,9 +65,8 @@ const Serhadcomponent = () => {
           </Card.Text>
         </Card.Body>
       </Card>
-      
     </CardGroup>
-    </div>
+    <br></br>
     </div>
 
   );
